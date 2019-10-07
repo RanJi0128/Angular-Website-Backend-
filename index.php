@@ -3,7 +3,7 @@
       $curl = curl_init();
       curl_setopt_array($curl, [
         CURLOPT_RETURNTRANSFER => 1,
-        CURLOPT_URL => 'https://tnwebservice/v3.2/tnwebservicestringinputs.asmx/GetCategories?websiteConfigID=string'
+        CURLOPT_URL => 'https://tnwebservice/v3.2/tnwebservicestringinputs.asmx/GetCategories'
       ]);
       
       $resp = curl_exec($curl);
