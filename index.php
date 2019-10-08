@@ -3,7 +3,7 @@
       $curl = curl_init();
       curl_setopt_array($curl, [
         CURLOPT_RETURNTRANSFER => 1,
-        CURLOPT_URL => 'http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx/GetEvents?websiteConfigID=26432'
+        CURLOPT_URL => 'http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx'
       ]);
       
       $resp = curl_exec($curl);
