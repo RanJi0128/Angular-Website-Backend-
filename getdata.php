@@ -4,12 +4,11 @@
       $curl = curl_init();
       curl_setopt_array($curl, [
         CURLOPT_RETURNTRANSFER => 1,
-        CURLOPT_URL => 'http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx/'.$data.'?websiteConfigID=26432&numberOfEvents=100'
+        CURLOPT_URL => 'http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx/'.$data.'?websiteConfigID=26432&numberOfEvents=100&eventID'
       ]);
       
       $resp = curl_exec($curl);
-      print_r($curl);
-     // echo $resp;
+      echo $resp;
       curl_close($curl);      
   
 ?>
