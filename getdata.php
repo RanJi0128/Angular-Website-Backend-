@@ -9,6 +9,7 @@
       ]);
       
       $resp = curl_exec($curl);
+      echo "result=>";
       echo $resp;
       curl_close($curl);      
   //http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx/'.$data.'?websiteConfigID=26432&numberOfEvents=1&eventID=20
