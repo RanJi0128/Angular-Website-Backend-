@@ -4,8 +4,8 @@
       $curl = curl_init();
       curl_setopt_array($curl, [
         CURLOPT_RETURNTRANSFER => 1,
-        CURLOPT_URL => 'http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx/SearchEvents?websiteConfigI
-        D=26432&searchTerms=%22Foxborough%22'
+        CURLOPT_URL => 'http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservicestringinputs.asmx/GetEvents?websiteConfigI
+        D=26432&numberOfEvents=2'
       ]);
       
       $resp = curl_exec($curl);
