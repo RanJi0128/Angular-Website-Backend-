@@ -9,7 +9,7 @@
       
       $resp = curl_exec($curl);
       print_r($curl);
-      echo $resp;
+     // echo $resp;
       curl_close($curl);      
   
 ?>
