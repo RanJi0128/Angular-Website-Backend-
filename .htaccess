@@ -6,6 +6,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 Header set Access-Control-Allow-Origin "*"
-Header set Access-Control-Allow-Headers "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method,Access-Control-Allow-Methods"
+Header set Access-Control-Allow-Headers "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method,Access-Control-Allow-Methods,Content-Type"
 Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE,PATCH,OPTIONS"
 </IfModule>
